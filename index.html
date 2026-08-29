@@ -1,38 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Mu Yar Khin — Civil Engineer, Site Engineer, Building Surveyor and QA/QC professional with 13+ years of experience.">
-<title>Mu Yar Khin | Civil Engineer</title>
+<title>Mu Yar Khin | Civil Engineer Portfolio</title>
 <style>
-:root{--bg:#07111f;--card:#0d1b2e;--text:#eef5ff;--muted:#9fb0c7;--line:#1d3552;--a:#55c7b3;--b:#79a8ff}
-*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#06101d,#091727,#07111f);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:10;background:#06101ddd;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.05em}.brand span,.eyebrow,.date{color:var(--a)}.links{display:flex;gap:24px;color:var(--muted);font-size:.92rem}
-.hero{padding:95px 0 75px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:800}h1{font-size:clamp(3.2rem,7vw,6rem);line-height:.94;letter-spacing:-.055em;margin:18px 0}h1 span{color:var(--a)}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.03em;margin:8px 0 24px}.hero h2{font-size:1.3rem;color:#c7d6e8;letter-spacing:0;font-weight:500}.hero p,.section-head p,.card p,.job li,.project p{color:var(--muted)}
-.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}.btn{display:inline-flex;padding:12px 17px;border:1px solid var(--line);border-radius:10px;background:var(--card);font-weight:750}.btn:hover{transform:translateY(-2px)}.primary{background:var(--a);color:#06131c;border-color:var(--a)}
-.profile{padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#10233b,#081524);box-shadow:0 25px 80px #0004}.mark{width:74px;height:74px;border-radius:18px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;color:#06131c;font-size:1.7rem;font-weight:900;margin-bottom:22px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.stat{padding:15px;border:1px solid var(--line);border-radius:13px}.stat b{display:block;color:var(--a);font-size:1.45rem}.stat small{color:var(--muted)}
-section{padding:80px 0;border-top:1px solid #1d355277}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:30px}.section-head p{max-width:520px}.kicker{color:var(--a);text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:800}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card,.job,.project{padding:24px;border:1px solid var(--line);border-radius:18px;background:#0d1b2ebd}.card h3,.job h3,.project h3{margin:0 0 7px}.tags{display:flex;flex-wrap:wrap;gap:9px}.tag{padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#0a1829;color:#c9d8ea;font-size:.84rem}
-.timeline{display:grid;gap:17px}.job{display:grid;grid-template-columns:190px 1fr;gap:25px}.company{color:#b9c9dc;margin-bottom:10px}.job ul{margin:0;padding-left:20px}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.num{color:var(--a);font-size:.75rem;font-weight:900;letter-spacing:.1em}.project h3{margin-top:9px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}.row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}.row span{display:block;color:var(--muted);font-size:.9rem}
-footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-@media(max-width:850px){.hero,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:7px}.links{display:none}}
-@media(max-width:560px){.grid,.projects,.stats{grid-template-columns:1fr}.hero{padding-top:65px}h1{font-size:3.5rem}}
+:root{
+  --bg:#07111f; --panel:#0d1b2e; --panel2:#10233b; --text:#eef5ff;
+  --muted:#9fb0c7; --accent:#55c7b3; --accent2:#79a8ff; --line:#1c3451;
+  --max:1160px;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+background:linear-gradient(180deg,#06101d 0%,#091727 55%,#07111f 100%);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(6,16,29,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--accent)}
+.nav-links{display:flex;gap:24px;color:var(--muted);font-size:.92rem}
+.nav-links a:hover{color:var(--text)}
+.hero{padding:100px 0 75px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.95;margin:18px 0 22px;letter-spacing:-.055em}
+h1 span{color:var(--accent)}
+.hero h2{font-size:1.25rem;color:#c7d6e8;font-weight:500;max-width:760px}
+.hero p{color:var(--muted);max-width:760px;font-size:1.05rem}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:10px;
+border:1px solid var(--line);background:var(--panel);font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:#426488}
+.btn.primary{background:var(--accent);color:#06131c;border-color:var(--accent)}
+.btn.secondary{background:transparent}
+.profile-card{background:linear-gradient(145deg,rgba(16,35,59,.9),rgba(8,21,36,.95));
+border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.25)}
+.profile-card .mark{width:74px;height:74px;border-radius:18px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+display:grid;place-items:center;color:#06131c;font-size:1.7rem;font-weight:900;margin-bottom:25px}
+.profile-card h3{margin:0 0 8px;font-size:1.4rem}.profile-card p{margin:5px 0;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.stat{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}
+.stat b{display:block;font-size:1.5rem;color:var(--accent)}.stat small{color:var(--muted)}
+section{padding:85px 0;border-top:1px solid rgba(28,52,81,.65)}
+.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:34px}
+.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:800}
+h2{font-size:clamp(2rem,4vw,3rem);margin:7px 0 0;letter-spacing:-.03em}
+.section-head p{color:var(--muted);max-width:530px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:rgba(13,27,46,.72);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.tag{font-size:.83rem;color:#c9d8ea;border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:#0a1829}
+.timeline{display:grid;gap:18px}
+.job{display:grid;grid-template-columns:190px 1fr;gap:25px;padding:24px;border:1px solid var(--line);border-radius:18px;background:rgba(13,27,46,.62)}
+.date{color:var(--accent);font-weight:800}.job h3{margin:0}.job .company{color:#b9c9dc;margin:3px 0 10px}.job ul{margin:0;padding-left:20px;color:var(--muted)}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{min-height:170px;padding:25px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#0d1b2e,#0a1728)}
+.project .num{color:var(--accent);font-weight:900;font-size:.8rem;letter-spacing:.1em}.project h3{margin:10px 0 7px}.project p{color:var(--muted);margin:0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-card{padding:28px;border-radius:20px;border:1px solid var(--line);background:rgba(13,27,46,.75)}
+.contact-row{display:flex;gap:13px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.contact-row:last-child{border-bottom:0}.contact-row strong{display:block}.contact-row span{color:var(--muted);font-size:.9rem}
+footer{padding:30px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:850px){
+ .hero,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:8px}
+ .nav-links{display:none}
+}
+@media(max-width:560px){.grid,.project-grid,.stats{grid-template-columns:1fr}.hero{padding-top:70px}h1{font-size:3.5rem}}
 </style>
 </head>
 <body>
-<nav><div class="wrap nav"><a class="brand" href="#top">MU YAR <span>KHIN</span></a><div class="links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div></nav>
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#top">MU YAR <span>KHIN</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a>
+      <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
 <main id="top">
-<section class="wrap hero">
-<div><div class="eyebrow">Civil Engineering • Site • Building Surveying • QA/QC</div><h1>MU YAR <span>KHIN</span></h1><h2>Civil Engineer | Site Engineer | Assistant Building Surveyor | QA/QC Engineer</h2><p>13+ years of experience in structural inspection, building condition assessment, site supervision, heritage conservation, QA/QC, seismic vulnerability assessment, NDT, technical reporting and project coordination.</p><div class="actions"><a class="btn primary" href="Mu_Yar_Khin_(Civil Engineer) Resume.pdf" download>Download Resume</a><a class="btn" href="#contact">Contact Me</a><a class="btn" href="https://www.linkedin.com/in/muyarkhin542" target="_blank">LinkedIn</a><a class="btn" href="https://wa.me/959791623821" target="_blank">WhatsApp</a><a class="btn" href="mailto:muyarkhin542@gmail.com">Email</a></div></div>
-<aside class="profile"><div class="mark">MK</div><h3> Inspection engineering profile</h3><p>Open to opportunities in civil engineering, site engineering, building surveying, structural inspection and QA/QC.</p><div class="stats"><div class="stat"><b>13+</b><small>Years experience</small></div><div class="stat"><b>200+</b><small>Heritage monuments</small></div><div class="stat"><b>50+</b><small>Buildings inspected</small></div></div></aside>
+<section class="hero container">
+  <div>
+    <div class="eyebrow">Civil Engineering • Site • Building Surveying • QA/QC</div>
+    <h1>MU YAR <span>KHIN</span></h1>
+    <h2>Civil Engineer | Site Engineer | Assistant Building Surveyor | QA/QC Engineer</h2>
+    <p>13+ years of experience across structural inspection, building condition assessment, site supervision, heritage conservation, QA/QC, seismic vulnerability assessment, NDT, technical reporting and project coordination.</p>
+    <div class="actions">
+      <a class="btn primary" href="Mu_Yar_Khin_(Civil Engineer) Resume.pdf" download>Download Resume</a>
+      <a class="btn" href="#contact">Contact Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/muyarkhin542" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://wa.me/959791623821" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="mailto:muyarkhin542@gmail.com">Email</a>
+    </div>
+  </div>
+  <aside class="profile-card">
+    <div class="mark">MK</div>
+    <h3>Singapore-ready engineering profile</h3>
+    <p>Open to opportunities in Singapore across civil engineering, site engineering, building surveying, structural inspection and QA/QC.</p>
+    <div class="stats">
+      <div class="stat"><b>13+</b><small>Years experience</small></div>
+      <div class="stat"><b>200+</b><small>Heritage monuments assessed</small></div>
+      <div class="stat"><b>50+</b><small>Buildings inspected</small></div>
+    </div>
+  </aside>
 </section>
-<section id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">01 — About</div><h2>Inspection, quality and delivery.</h2></div><p>Experienced in field engineering, technical documentation and multidisciplinary coordination to support safe, high-quality project execution.</p></div><div class="grid"><div class="card"><h3>Structural Inspection</h3><p>Condition assessment, Rapid Visual Screening, defect mapping and post-earthquake damage inspection.</p></div><div class="card"><h3>Construction & QA/QC</h3><p>Site supervision, quality control, document control, safety compliance and project coordination.</p></div><div class="card"><h3>Technical Reporting</h3><p>Technical reports, inspection records, restoration documentation and project coordination documents.</p></div></div></div></section>
-<section id="expertise"><div class="wrap"><div class="kicker">02 — Expertise</div><h2>Core capabilities</h2><div class="card"><div class="tags"><span class="tag">Structural Inspection</span><span class="tag">Condition Assessment</span><span class="tag">Seismic / Earthquake Assessment</span><span class="tag">Rapid Visual Screening</span><span class="tag">NDT — Rebound Hammer</span><span class="tag">NDT — UPV</span><span class="tag">Building Surveying</span><span class="tag">Heritage Conservation</span><span class="tag">QA/QC</span><span class="tag">Site Supervision</span><span class="tag">Defect Mapping</span><span class="tag">Technical Reporting</span><span class="tag">Project Coordination</span><span class="tag">Document Control</span><span class="tag">AutoCAD</span><span class="tag">Advanced Excel</span><span class="tag">Microsoft Office</span><span class="tag">Revit — In Progress</span></div></div></div></section>
-<section id="experience"><div class="wrap"><div class="kicker">03 — Experience</div><h2>Professional experience</h2><div class="timeline">
-<article class="job"><div class="date">2015 — 2025</div><div><h3>Executive Engineer</h3><div class="company">Special Project Committee, Federation of Myanmar Engineering Societies (Fed.MES)</div><ul><li>Structural inspections, condition assessments and RVS for 50+ public and heritage buildings.</li><li>Led a team of 10 engineers to assess 200+ heritage monuments after the 2016 Chauk earthquake.</li><li>Performed Rebound Hammer and UPV testing and recommended repair and rehabilitation methods.</li><li>Prepared technical reports, defect mapping and restoration documentation.</li><li>Coordinated multidisciplinary teams and contributed to the Myanmar National Building Code.</li><li>Managed quality control and document control for construction and restoration projects.</li></ul></div></article>
-<article class="job"><div class="date">2013 — 2015</div><div><h3>Quantity Surveyor / Senior Engineer</h3><div class="company">ABC Telecomm Co., Ltd.</div><ul><li>Prepared quantity take-offs, BOQs and cost estimates for civil and telecom infrastructure projects.</li><li>Supported tender preparation, budgeting and cost control.</li><li>Coordinated with contractors, subcontractors and clients to resolve technical and site issues.</li></ul></div></article>
-<article class="job"><div class="date">2012 — 2013</div><div><h3>Site Engineer</h3><div class="company">Sub–Construction Co., Ltd.</div><ul><li>Supervised construction of a 6-story residential building (57,600 sq. ft.).</li><li>Directed finishing works and managed site operations, labor, materials and subcontractors.</li><li>Coordinated with MEP teams while maintaining site safety and quality control.</li></ul></div></article>
-</div></div></section>
+
+<section id="about">
+<div class="container">
+  <div class="section-head"><div><div class="kicker">01 — About</div><h2>Built around inspection, quality and delivery.</h2></div>
+  <p>Experienced in combining field engineering, technical documentation and multidisciplinary coordination to support safe, high-quality project execution.</p></div>
+  <div class="grid">
+    <div class="card"><h3>Structural Inspection</h3><p>Condition assessment, Rapid Visual Screening, defect mapping and post-earthquake damage inspection.</p></div>
+    <div class="card"><h3>Construction & QA/QC</h3><p>Site supervision, quality control, document control, safety compliance and coordination with project teams.</p></div>
+    <div class="card"><h3>Technical Reporting</h3><p>Technical reports, restoration documentation, inspection records and project coordination documentation.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="expertise">
+<div class="container">
+  <div class="section-head"><div><div class="kicker">02 — Expertise</div><h2>Core capabilities</h2></div></div>
+  <div class="card">
+    <div class="tags">
+      <span class="tag">Structural Inspection</span><span class="tag">Condition Assessment</span>
+      <span class="tag">Seismic / Earthquake Assessment</span><span class="tag">Rapid Visual Screening</span>
+      <span class="tag">NDT — Rebound Hammer</span><span class="tag">NDT — UPV</span>
+      <span class="tag">Building Surveying</span><span class="tag">Heritage Conservation</span>
+      <span class="tag">QA/QC</span><span class="tag">Site Supervision</span>
+      <span class="tag">Defect Mapping</span><span class="tag">Technical Reporting</span>
+      <span class="tag">Project Coordination</span><span class="tag">Document Control</span>
+      <span class="tag">AutoCAD</span><span class="tag">Advanced Excel</span><span class="tag">Microsoft Office</span>
+      <span class="tag">Revit — In Progress</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+  <div class="section-head"><div><div class="kicker">03 — Experience</div><h2>Professional experience</h2></div></div>
+  <div class="timeline">
+    <article class="job">
+      <div class="date">2015 — 2025</div>
+      <div><h3>Executive Engineer</h3><div class="company">Special Project Committee, Federation of Myanmar Engineering Societies (Fed.MES)</div>
+      <ul>
+        <li>Conducted structural inspections, condition assessments and RVS for 50+ public and heritage buildings, including schools and hospitals.</li>
+        <li>Led a team of 10 engineers to assess 200+ heritage monuments after the 2016 Chauk earthquake.</li>
+        <li>Performed Rebound Hammer and UPV testing and recommended repair and rehabilitation methods.</li>
+        <li>Prepared technical reports, defect mapping and restoration documentation.</li>
+        <li>Coordinated multidisciplinary teams and contributed to the Myanmar National Building Code.</li>
+        <li>Managed quality control and document control for construction and restoration projects.</li>
+      </ul></div>
+    </article>
+    <article class="job">
+      <div class="date">2013 — 2015</div>
+      <div><h3>Quantity Surveyor / Senior Engineer</h3><div class="company">ABC Telecomm Co., Ltd.</div>
+      <ul>
+        <li>Prepared quantity take-offs, BOQs and cost estimates for civil and telecom infrastructure projects.</li>
+        <li>Supported tender preparation, budgeting and cost control.</li>
+        <li>Coordinated with contractors, subcontractors and clients to resolve technical and site issues.</li>
+        <li>Monitored project progress and supported timely delivery.</li>
+      </ul></div>
+    </article>
+    <article class="job">
+      <div class="date">2012 — 2013</div>
+      <div><h3>Site Engineer</h3><div class="company">Sub–Construction Co., Ltd.</div>
+      <ul>
+        <li>Supervised construction of a 6-story residential building (57,600 sq. ft.).</li>
+        <li>Directed finishing works including plastering, flooring, ceiling and painting.</li>
+        <li>Managed site operations, labor, materials and subcontractors.</li>
+        <li>Coordinated with MEP teams while maintaining site safety and quality control.</li>
+      </ul></div>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
 <section id="projects"><div class="wrap"><div class="kicker">04 — Selected Projects</div><h2>Field work & technical deliverables</h2><div class="projects"><div class="project"><div class="num">PROJECT 01</div><h3>JiWiTaDarNa Hospital</h3><p>Structural inspection and HSI checklist preparation.</p></div><div class="project"><div class="num">PROJECT 02</div><h3>Archaeological Museum, Bagan</h3><p>Structural inspection and technical report preparation.</p></div><div class="project"><div class="num">PROJECT 03</div><h3>Government Telegraph Office</h3><p>Defect mapping and condition documentation.</p></div><div class="project"><div class="num">PROJECT 04</div><h3>Shwe Nat Taung Pagoda</h3><p>Structural inspection and technical reporting.</p></div><div class="project"><div class="num">PROJECT 05</div><h3>Yangon University</h3><p>I conducted building assessments at Yangon University.</h2><div><img src="photo_2026-08-29_20-29-49.jpg" width="200"><<img src="photo_2026-08-29_20-29-46.jpg" width="200"><img src="photo_2026-08-29_20-29-43.jpg" width="200"><img src="photo_2026-08-29_20-29-39.jpg" width="200"><img src="photo_2026-08-29_20-29-28.jpg" width="200"><img src="photo_2026-08-29_20-29-22.jpg" width="200"></div> 
 <section>
 <div class="container">
